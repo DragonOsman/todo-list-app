@@ -16,6 +16,7 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
   return (
     <form className="add-item-form" onSubmit={submitHandler}>
       <label htmlFor="add-item">Add ToDo Item:</label>
+      <br />
       <input 
         type="text" 
         name="add-todo" 
@@ -24,6 +25,7 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
         value={item.text ?? ""} 
         onChange={e => updateItem(e.target.value)}
       />
+      <br />
       <input 
         type="submit" 
         value="Add" 

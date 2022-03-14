@@ -14,12 +14,7 @@ ol > li {
   padding: 10px 15px;
 }
 
-ol > li input[type=checkbox] {
-  height: 20px;
-  width: 20px;
-}
-
 .delete-button {
-  padding: 4px 15px;
+  padding: 2px 15px;
   margin-left: 15px;
 }

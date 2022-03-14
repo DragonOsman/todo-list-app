@@ -45,7 +45,8 @@
           "allowTempateLiterals": true,
           "avoidEscape": true
         }
-      ]
+      ],
+      "semi": "error"
     }
   },
   "env": {
