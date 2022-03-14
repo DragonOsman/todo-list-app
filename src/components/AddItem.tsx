@@ -19,8 +19,8 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
       <br />
       <input 
         type="text" 
-        name="add-todo" 
-        id="add-todo" 
+        name="add-item" 
+        id="add-item" 
         className="add-item" 
         value={item.text ?? ""} 
         onChange={e => updateItem(e.target.value)}
