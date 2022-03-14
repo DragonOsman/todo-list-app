@@ -25,7 +25,7 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
         onChange={e => updateItem(e.target.value)}
       />
       <input 
-        type="button" 
+        type="submit" 
         value="Add" 
         className="submit-btn" 
       />
