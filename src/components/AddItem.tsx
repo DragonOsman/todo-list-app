@@ -32,9 +32,7 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
         className="submit-btn" 
       />
       <div className="item-container">
-        <span className="item-span">
-          {item.text}
-        </span>
+        {item.text}
       </div>
     </form>
   );
