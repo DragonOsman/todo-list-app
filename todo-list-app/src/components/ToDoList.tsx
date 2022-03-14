@@ -1,4 +1,5 @@
 import React from "react";
+import "./ToDoList.css";
 
 export interface ListItemProps {
   id: number,
@@ -25,8 +26,8 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
                   onChange={() => toggleItemStatus(dataItem.id)} 
                   checked={dataItem.completed} 
                 />
-                <span className="items">{dataItem.text}</span>
-                <button type="button" className="items" onClick={() => removeItem(dataItem.id)}>
+                <span className="item-text">{dataItem.text}</span>
+                <button type="button" className="delete-button" onClick={() => removeItem(dataItem.id)}>
                   Delete
                 </button>
               </div>
@@ -35,7 +36,7 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
         )
       }) }
     </div>
-  ) : (<span>You haven't created a list yet</span>);
+  ) : (<span>No items found</span>);
 };
 
 export default ToDoList;

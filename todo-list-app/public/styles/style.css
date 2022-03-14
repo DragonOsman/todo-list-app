@@ -5,7 +5,7 @@
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
   vertical-align: baseline;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
@@ -19,6 +19,15 @@ body {
 */
 header, footer, main {
   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #238796;
+}
+
+a:hover {
+  color: #fff;
 }
 
 header, footer {

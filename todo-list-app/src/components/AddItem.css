@@ -1,0 +1,12 @@
+input {
+  flex: 1;
+}
+
+.item-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-span {
+  background-color: #ccc;
+}

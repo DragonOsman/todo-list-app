@@ -18,9 +18,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "eslint-config",
-      "eslint-config/node"
+      "react-app"
     ],
     "rules": {
       "eqeqeq": "error",

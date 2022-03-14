@@ -1,4 +1,5 @@
 import React, { SyntheticEvent } from "react";
+import "./AddItem.css";
 
 export interface AddItemProps {
   item: {id:number, text:string},
@@ -8,12 +9,12 @@ export interface AddItemProps {
 
 const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
   const submitHandler = (event:SyntheticEvent) => {
-    event.preventDefault;
+    event.preventDefault();
     addItem();
   };
 
   return (
-    <form className="addItemForm" onSubmit={submitHandler}>
+    <form className="add-item-form" onSubmit={submitHandler}>
       <label htmlFor="add-item">Add ToDo Item:</label>
       <input 
         type="text" 

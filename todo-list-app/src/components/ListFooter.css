@@ -1,0 +1,16 @@
+.list-footer > button {
+  cursor: pointer;
+  background-color: #2c4047;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.list-footer > button:hover {
+  background-color: #536666;
+}
+
+.note-span-container {
+  padding: 15px; 
+}
