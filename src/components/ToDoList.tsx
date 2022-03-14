@@ -15,7 +15,7 @@ export interface ListProps {
 
 const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) => {
   return data.length > 0 ? (
-    <div className="listContainer">
+    <div className="list-container">
       { data.map(dataItem => {
         return (
           <ol key={dataItem.id}>
@@ -36,7 +36,7 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
         )
       }) }
     </div>
-  ) : (<span>No items found</span>);
+  ) : (<p>No items found</p>);
 };
 
 export default ToDoList;
