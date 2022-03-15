@@ -31,9 +31,6 @@ const AddItem:React.FC<AddItemProps> = ({item, updateItem, addItem}) => {
         value="Add" 
         className="submit-btn" 
       />
-      <div className="item-container">
-        {item.text}
-      </div>
     </form>
   );
 };

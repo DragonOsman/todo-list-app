@@ -56,7 +56,7 @@ const ToDoContextApi:React.FC = () => {
     <>
       <AddItem item={listItem} updateItem={updateItem} addItem={addItem} />
       <ToDoList data={listData} removeItem={removeItem} toggleItemStatus={toggleItemStatus} />
-      <ListFooter item={listData.length} storage="Context API" filterList={filterList} />
+      <ListFooter filterList={filterList} />
     </>
   );
 };

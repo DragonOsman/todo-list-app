@@ -18,3 +18,7 @@ ol > li {
   padding: 2px 15px;
   margin-left: 15px;
 }
+
+.empty-list-note {
+  margin-top: 5px;
+}

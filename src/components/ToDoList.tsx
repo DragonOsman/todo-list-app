@@ -20,13 +20,14 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
         return (
           <ol key={dataItem.id}>
             <li>
-              <div className="itemContainer">
+              <div className="item-container">
                 <input 
                   type="checkbox" 
                   onChange={() => toggleItemStatus(dataItem.id)} 
-                  checked={dataItem.completed} 
+                  checked={dataItem.completed}
                 />
-                <span className="item-text">{dataItem.text}</span>
+                <span className="item-text" style={{ textDecoration: dataItem.completed ? 
+                  "line-through" : "none" }}>{dataItem.text}</span>
                 <button type="button" className="delete-button" onClick={() => removeItem(dataItem.id)}>
                   Delete
                 </button>
@@ -36,7 +37,7 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
         )
       }) }
     </div>
-  ) : (<p>No items found</p>);
+  ) : (<p className="empty-list-note">No to-do items in list</p>);
 };
 
 export default ToDoList;
