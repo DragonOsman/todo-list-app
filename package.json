@@ -52,11 +52,12 @@
         "error",
         "double",
         {
-          "allowTempateLiterals": true,
-          "avoidEscape": true
+          "allowTempateLiterals": true
         }
       ],
-      "semi": "error"
+      "semi": "error",
+      "arrow-body-style": "off",
+      "no-unused-vars": "warn"
     },
     "env": {
       "browser": true
