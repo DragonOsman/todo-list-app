@@ -28,7 +28,10 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
                 />
                 <span className="item-text" style={{ textDecoration: dataItem.completed
                   ? "line-through"
-                  : "none" }}>
+                  : "none",
+                  backgroundColor: dataItem.completed
+                  ? "#8cbed6"
+                  : "#87ceeb" }}>
                 {dataItem.text}
                 </span>
                 <button type="button" className="delete-button" onClick={() => removeItem(dataItem.id)}>
