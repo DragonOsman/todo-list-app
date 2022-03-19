@@ -13,8 +13,8 @@ body {
 }
 
 /*
-  For older browsers that 
-  don't know about HTML5 
+  For older browsers that
+  don't know about HTML5
   semantic elements
 */
 header, footer, main {
@@ -38,24 +38,16 @@ header, footer {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 200px;
-  text-align: center;
+  margin-top: 150px;
 }
 
 .dragon-logo {
@@ -66,4 +58,24 @@ main {
 .dragon-logo::after {
   clear: right;
   content: "";
+}
+
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  header, footer {
+    display: block;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 100px;
+  }
 }
