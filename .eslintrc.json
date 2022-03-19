@@ -7,7 +7,7 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "eslint-config"
+        "./eslint-config"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -54,6 +54,7 @@
         "comma-dangle": "off",
         "new-cap": "off",
         "padding-line-between-statements": "off",
-        "@typescript-eslint/ban-ts-comment": "off"
+        "@typescript-eslint/ban-ts-comment": "off",
+        "curly": "error"
     }
 }
