@@ -49,7 +49,7 @@
           "outerIIFEBody": 0
         }
       ],
-      "curly": "error",
+      "curly": ["error", "all"],
       "quotes": [
         "error",
         "double"
@@ -61,7 +61,11 @@
       "no-confusing-arrow": "off",
       "block-spacing": "warn",
       "array-bracket-spacing": "off",
-      "arrow-parens": "off"
+      "arrow-parens": "off",
+      "comma-dangle": "off",
+      "new-cap": "off",
+      "padding-line-between-statements": "off",
+      "@typescript-eslint/ban-ts-comment": "off"
     },
     "env": {
       "browser": true

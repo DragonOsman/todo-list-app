@@ -3,7 +3,7 @@ import { ALL_FILTER, ACTIVE_FILTER, COMPLETED_FILTER } from "../constants";
 
 interface ActionProps {
   type: string
-};
+}
 
 const FilterReducer = (state: ListItemProps[] = [], action: ActionProps) => {
   switch (action.type) {
@@ -16,6 +16,6 @@ const FilterReducer = (state: ListItemProps[] = [], action: ActionProps) => {
     default:
       return state;
   }
-}
+};
 
 export default FilterReducer;

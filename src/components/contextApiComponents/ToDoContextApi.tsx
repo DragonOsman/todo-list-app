@@ -28,6 +28,7 @@ const ToDoContextApi:React.FC = () => {
   const addItem = () => {
     dispatch({
       type: ADD_ITEM_ACTION,
+      // @ts-ignore
       payload: listItem
     });
     setListItem(defaultListItem);
@@ -45,10 +46,10 @@ const ToDoContextApi:React.FC = () => {
       type: UPDATE_ITEM_ACTION,
       payload: { id }
     });
-  } ;
+  };
 
   const filterList = (type:string) => {
-    const filteredList = FilterReducer(todoList, {type});
+    const filteredList = FilterReducer(todoList, { type });
     setListData(filteredList);
   };
 
