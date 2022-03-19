@@ -1,0 +1,58 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-var": "error",
+        "prefer-const": "error",
+        "yoda": "error",
+        "no-unused-vars": "warn",
+        "no-extra-parens": "warn",
+        "multiline-ternary": "off",
+        "no-confusing-arrow": "off",
+        "block-spacing": "warn",
+        "array-bracket-spacing": "off",
+        "arrow-parens": "off",
+        "comma-dangle": "off",
+        "new-cap": "off",
+        "padding-line-between-statements": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+    }
+}

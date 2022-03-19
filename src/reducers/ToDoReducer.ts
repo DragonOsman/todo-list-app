@@ -12,18 +12,18 @@ interface StateProps {
 
 const ToDoReducer = (state: StateProps = { todoList: [] }, action: ActionProps) => {
   switch (action.type) {
-    case ADD_ITEM_ACTION:
-      return { todoList: [...state.todoList, action.payload] };
-    case REMOVE_ITEM_ACTION:
-      return {
-        todoList:
+  case ADD_ITEM_ACTION:
+    return { todoList: [...state.todoList, action.payload] };
+  case REMOVE_ITEM_ACTION:
+    return {
+      todoList:
           state.todoList.length
             ? state.todoList.filter(d => d.id !== action.payload.id)
             : []
-      };
-    case UPDATE_ITEM_ACTION:
-      return {
-        todoList:
+    };
+  case UPDATE_ITEM_ACTION:
+    return {
+      todoList:
           state.todoList.length
             ? state.todoList.map(d => {
               if (d.id === action.payload.id) {
@@ -31,9 +31,9 @@ const ToDoReducer = (state: StateProps = { todoList: [] }, action: ActionProps) 
               }
               return d;
             }) : []
-      };
-    default:
-      return state;
+    };
+  default:
+    return state;
   }
 };
 
