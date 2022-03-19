@@ -25,66 +25,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .ts,.tsx"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "./eslint-config",
-      "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-      "eqeqeq": "error",
-      "yoda": "error",
-      "no-var": "error",
-      "prefer-const": "error",
-      "prefer-arrow-callback": "error",
-      "prefer-destructuring": "error",
-      "indent": [
-        "error",
-        2,
-        {
-          "SwitchCase": 1,
-          "VariableDeclarator": "first",
-          "outerIIFEBody": 0
-        }
-      ],
-      "curly": [
-        "error",
-        "all"
-      ],
-      "quotes": [
-        "error",
-        "double"
-      ],
-      "semi": "error",
-      "no-unused-vars": "warn",
-      "no-extra-parens": "warn",
-      "multiline-ternary": "off",
-      "no-confusing-arrow": "off",
-      "block-spacing": "warn",
-      "array-bracket-spacing": "off",
-      "arrow-parens": "off",
-      "comma-dangle": "off",
-      "new-cap": "off",
-      "padding-line-between-statements": "off",
-      "@typescript-eslint/ban-ts-comment": "off"
-    },
-    "env": {
-      "browser": true
-    },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2022,
-      "ecmaFeatures": {
-        "jsx": true,
-        "templateStrings": true,
-        "destructuring": true
-      }
-    },
-    "parser": "@typescript-eslint/parser"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
