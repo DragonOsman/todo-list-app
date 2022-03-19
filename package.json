@@ -57,8 +57,11 @@
       "semi": "error",
       "no-unused-vars": "warn",
       "no-extra-parens": "warn",
-      "multiline-ternary": "warn",
-      "no-confusing-arrow": "warn"
+      "multiline-ternary": "off",
+      "no-confusing-arrow": "off",
+      "block-spacing": "warn",
+      "array-bracket-spacing": "off",
+      "arrow-parens": "off"
     },
     "env": {
       "browser": true
@@ -70,7 +73,9 @@
       "sourceType": "module",
       "ecmaVersion": 2022,
       "ecmaFeatures": {
-        "jsx": true
+        "jsx": true,
+        "templateStrings": true,
+        "destructuring": true
       }
     },
     "parser": "@typescript-eslint/parser"

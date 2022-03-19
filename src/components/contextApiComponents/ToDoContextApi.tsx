@@ -6,7 +6,7 @@ import AddItem from "../AddItem";
 import ToDoList, { ListItemProps } from "../ToDoList";
 import { ToDoContext } from "./ToDoProvider";
 
-const defaultListItem: ListItemProps = {id: Date.now(), text: "", completed: false};
+const defaultListItem: ListItemProps = { id: Date.now(), text: "", completed: false };
 
 const ToDoContextApi:React.FC = () => {
   const { state: { todoList }, dispatch } = useContext(ToDoContext);
