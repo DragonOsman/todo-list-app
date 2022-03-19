@@ -24,12 +24,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src --ext .ts,.tsx"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "./eslint-config"
+      "./eslint-config",
+      "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
       "eqeqeq": "error",
@@ -50,22 +52,28 @@
       "curly": "error",
       "quotes": [
         "error",
-        "double",
-        {
-          "allowTempateLiterals": true
-        }
+        "double"
       ],
       "semi": "error",
-      "arrow-body-style": "off",
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
+      "no-extra-parens": "warn",
+      "multiline-ternary": "warn",
+      "no-confusing-arrow": "warn"
     },
     "env": {
       "browser": true
     },
+    "plugins": [
+      "@typescript-eslint"
+    ],
     "parserOptions": {
       "sourceType": "module",
-      "ecmaVersion": 2022
-    }
+      "ecmaVersion": 2022,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "parser": "@typescript-eslint/parser"
   },
   "browserslist": {
     "production": [
@@ -80,7 +88,18 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-jest-dom": "^4.0.1",
     "eslint-plugin-jsdoc": "^38.0.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sonarjs": "^0.12.0",
+    "eslint-plugin-testing-library": "^5.1.0",
     "jsdoc": "^3.6.10"
   }
 }
