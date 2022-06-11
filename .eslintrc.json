@@ -55,6 +55,9 @@
         "new-cap": "off",
         "padding-line-between-statements": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "curly": "error"
+        "curly": [
+           "error",
+           "all"
+        ]
     }
 }

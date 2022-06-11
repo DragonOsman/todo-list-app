@@ -10,11 +10,18 @@ export interface AddItemProps {
 const AddItem:React.FC<AddItemProps> = ({ item, updateItem, addItem }) => {
   const submitHandler = (e:SyntheticEvent) => {
     e.preventDefault();
-    addItem();
+    const input = document.querySelector("#add-item");
+    if (input?.nodeValue === "") {
+      const errorP = document.createElement("p");
+      errorP.textContent = "Empty input not allowed!";
+      document.querySelector("#input-form")?.insertAdjacentElement("afterend", errorP);
+    } else {
+      addItem();
+    }
   };
 
   return (
-    <form className="add-item-form" onSubmit={submitHandler}>
+    <form className="add-item-form" id="input-form" onSubmit={submitHandler}>
       <label htmlFor="add-item">Add ToDo Item:</label>
       <br />
       <input

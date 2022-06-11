@@ -15,8 +15,8 @@ export interface ListProps {
 
 const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
   data.length > 0
-    ? (<div className="list-container">
-      { data.map(dataItem => (
+    ? <div className="list-container">
+      { data.map(dataItem =>
         <ul key={dataItem.id}>
           <li style={{ backgroundColor: dataItem.completed
             ? "#87ceeb"
@@ -37,10 +37,8 @@ const ToDoList:React.FC<ListProps> = ({ data, removeItem, toggleItemStatus }) =>
               </button>
             </div>
           </li>
-        </ul>
-      ))}
+        </ul>)}
     </div>
-    )
     : <p className="empty-list-note">No to-do items in list</p>;
 
 export default ToDoList;
