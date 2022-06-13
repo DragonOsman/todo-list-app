@@ -25,7 +25,7 @@ main {
 @media screen and (width: 375px) and (height: 667px) {
   main {
     margin-top: 180px;
-    margin-left: 57px;
+    margin-left: -50%;
     margin-bottom: 331px;
     padding: 30px;
   }
