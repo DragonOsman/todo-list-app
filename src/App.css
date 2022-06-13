@@ -16,8 +16,8 @@ main {
 
 @media screen and (width: 320px) and (height: 568px) {
   main {
-    margin-top: 100px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: -1px;
     padding: 30px;
   }
 }
