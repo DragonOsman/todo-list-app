@@ -1,7 +1,7 @@
 main {
   background-color: #232935;
   background-image: linear-gradient(to bottom right, #232935, #233040);
-  margin: 131px 30px 222px 200px;
+  margin: 20vh 0 50vh 16%;
   padding: 10px 0;
   border: 2px solid #000;
   color: #fff;
@@ -12,56 +12,4 @@ main {
   flex-direction: column;
   text-align: center;
   width: 70%;
-}
-
-@media screen and (width: 320px) and (height: 568px) {
-  main {
-    margin-top: 30px;
-    margin-left: -1px;
-    padding: 30px;
-  }
-}
-
-@media screen and (width: 375px) and (height: 667px) {
-  main {
-    margin-top: 180px;
-    margin-left: 10px;
-    margin-bottom: 331px;
-    padding: 30px;
-  }
-}
-
-@media screen and (width: 414px) and (height: 896px) {
-  main {
-    margin-top: 179px;
-    margin-left: 62px;
-    margin-bottom: 296px;
-    padding: 30px;
-  }
-}
-
-@media screen and (width: 390px) and (height: 844px) {
-  main {
-    margin-top: 169px;
-    margin-left: 60px;
-    margin-bottom: 252px;
-    padding: 30px;
-  }
-}
-
-@media screen and (width: 393px) and (height: 851px) {
-  main {
-    margin-top: 170px;
-    margin-left: 61px;
-    margin-bottom: 255.2px;
-    padding: 30px;
-  }
-}
-
-@media screen and (width: 360px) and (height: 740px) {
-  main {
-    margin-left: 55px;
-    margin-top: 148px;
-    padding: 30px;
-  }
 }
